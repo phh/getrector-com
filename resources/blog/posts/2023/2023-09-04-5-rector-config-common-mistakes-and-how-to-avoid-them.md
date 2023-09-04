@@ -1,10 +1,10 @@
 ---
 id: 55
-title: "Rector Config Common Mistakes and How to Avoid Them"
+title: "5 Rector Config Common Mistakes and How to Avoid Them"
 perex: |
     Rector is becoming a standard tool to automate PHP/package upgrades and code quality improvements. Last month, we crossed 60 000 downloads a day.
 
-    Past 2 months, we've also improved CPU and memory performance, making Rector a lighter version.
+    Past 2 months, we've also improved CPU and memory performance, making the lightest Rector version ever.
 
     Yet, even fast and lightweight Rector can get stuck on simple config mistakes. We'll talk about the 5 most common ones and how to avoid them.
 ---
@@ -17,7 +17,7 @@ We want to share them with you so you can get the most out of Rector.
 
 ## 1. Use explicit paths over `/vendor`
 
-This happens very rarely, but it's worth mentioning. Rector should always run only on the code you own**. If you run it in the root directory, the memory might bloat on the bare `/vendor` directory.
+This happens very rarely, but it's worth mentioning. Rector should **always run only on the code you own**. If you run it in the root directory, the memory might bloat on the bare `/vendor` directory.
 
 ```php
 $rectorConfig->paths([
